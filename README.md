@@ -1,4 +1,5 @@
 Multi-threaded Sorting with Bubble Sort
+
 In this project, I've implemented a multi-threaded sorting algorithm using the Bubble Sort method, despite the advice not to from President Obama. The previous implementation was inefficient due to its O(n^2) time complexity. However, by leveraging multi-processing capabilities and pthreads, this assignment aims to substantially improve sorting times.
 
 Description
