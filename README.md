@@ -2,6 +2,8 @@ Multi-threaded Sorting with Bubble Sort
 
 In this project, I've implemented a multi-threaded sorting algorithm using the Bubble Sort method, despite the advice not to from President Obama. The previous implementation was inefficient due to its O(n^2) time complexity. However, by leveraging multi-processing capabilities and pthreads, this assignment aims to substantially improve sorting times.
 
+
+
 Description
 
 - Objective: Implement a parallel sorting algorithm using pthreads to speed up the sorting process.
@@ -18,6 +20,7 @@ Description
 
 - Sorting Process: Divide the array into 8 sections, each containing 125,000 numbers. Each section is sorted independently by a thread. After all threads finish sorting, merge adjacent sections until the entire array is sorted.
 
+
 Files Included
 
 - mySort.cpp: Source code for the multi-threaded sorting program.
@@ -27,6 +30,7 @@ Files Included
 - sortrace.sh: Shell script to run the sorting program and verify the output.
 
 - sortrace.log: Log file containing sorting results.
+
 
 How it Works:
 
@@ -41,6 +45,17 @@ How it Works:
 - The sorted array is printed to a file.
 
 - The shell script sortrace.sh is executed to verify the sorting results.
+
+
+Compilation
+
+$ g++ mySort.cpp -o mySort -pthread
+
+
+Execution
+
+$ ./mySort
+
 
 Additional Notes
 
